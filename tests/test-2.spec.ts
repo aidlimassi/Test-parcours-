@@ -8,6 +8,6 @@ test('test', async ({ page }) => {
 
   await page.getByRole('textbox', { name: 'kba1' }).click();
 
-  await page.getByRole('link', { name: 'Black Friday' }).click();
+  await page.getByRole('navigation').getByRole('link', { name: 'Black Friday' }).click();
   
 });
